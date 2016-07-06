@@ -1,22 +1,22 @@
-//#include <stdio.h>
-//int main(){
-//	char *name[]={"Follow me","BASIC","Great Wall","FORTAN","Computer Design"};
-//	char **p;			//char *(*p) pÖ¸ÏòÒ»¸ö×Ö·ûÖ¸Õë±äÁ¿£¬ÆäÖ¸ÏòÒ»¸ö×Ö·ûĞÍÊı¾İ
-//	int i;
-//	for(i=0;i<5;i++){
-//		p=name+i;
-//		printf("%s\n",*p);
-//		printf("µØÖ·ÖµÎª:%d\n",*p);
-//	}
-//	return 0;
-//}
+#include <stdio.h>
+int main(){
+	char *name[]={"Follow me","BASIC","Great Wall","FORTAN","Computer Design"};
+	char **p;			//char *(*p) pæŒ‡å‘ä¸€ä¸ªå­—ç¬¦æŒ‡é’ˆå˜é‡ï¼Œå…¶æŒ‡å‘ä¸€ä¸ªå­—ç¬¦å‹æ•°æ®
+	int i;
+	for(i=0;i<5;i++){
+		p=name+i;
+		printf("%s\n",*p);
+		printf("åœ°å€å€¼ä¸º:%d\n",*p);
+	}
+	return 0;
+}
 
-//#include <stdio.h>
-//int main(){
-//	int a[5]={1,3,5,7,9};
-//	int i,*num[5],**p;			//Ö¸ÏòÕûĞÍ±äÁ¿µÄÖ¸ÕëÊı×é
-//	for(i=0;i<5;i++) num[i]=&a[i];
-//	for(p=num;p<(num+5);) printf("%d ",**p++);
-//	printf("\n");
-//	return 0;
-//}
+#include <stdio.h>
+int main(){
+	int a[5]={1,3,5,7,9};
+	int i,*num[5],**p;			//æŒ‡å‘æ•´å‹å˜é‡çš„æŒ‡é’ˆæ•°ç»„
+	for(i=0;i<5;i++) num[i]=&a[i];
+	for(p=num;p<(num+5);) printf("%d ",**p++);
+	printf("\n");
+	return 0;
+}

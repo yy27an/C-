@@ -1,40 +1,40 @@
-//a[i]==*(a+i);p=a,*p,*(p+i)
-//ÏÂ±ê·¨
-//#include <stdio.h>
-//int main(){
-//	int a[5];
-//	int i;
-//	printf("please enter 5 integer numbers:\n");
-//	for(i=0;i<5;i++){scanf("%d",&a[i]);}
-//	for(i=0;i<5;i++){printf("%d ",a[i]);}
-//	printf("\n");
-//	return 0;
-//}
+// a[i]==*(a+i);p=a,*p,*(p+i)
+// ä¸‹æ ‡æ³•
+#include <stdio.h>
+int main(){
+	int a[5];
+	int i;
+	printf("please enter 5 integer numbers:\n");
+	for(i=0;i<5;i++){scanf("%d",&a[i]);}
+	for(i=0;i<5;i++){printf("%d ",a[i]);}
+	printf("\n");
+	return 0;
+}
 
-//Êı×éÃûºÍÔªËØĞòºÅ¶¨Î»ÔªËØµØÖ·
-//#include <stdio.h>
-//int main(){
-//	int a[5];
-//	int i;
-//	printf("please enter 5 integer numbers:\n");
-//	for(i=0;i<5;i++){scanf("%d",&a[i]);}
-//	for(i=0;i<5;i++){printf("%d ",*(a+i));}
-//	printf("\n");
-//	return 0;
-//}
+//æ•°ç»„åå’Œå…ƒç´ åºå·å®šä½å…ƒç´ åœ°å€
+#include <stdio.h>
+int main(){
+	int a[5];
+	int i;
+	printf("please enter 5 integer numbers:\n");
+	for(i=0;i<5;i++){scanf("%d",&a[i]);}
+	for(i=0;i<5;i++){printf("%d ",*(a+i));}
+	printf("\n");
+	return 0;
+}
 
-//Ö¸Õë±äÁ¿Ö¸ÏòÊı×é
-//#include <stdio.h>
-//int main(){
-//	int a[5];
-//	int *p;
-//	printf("please enter 5 integer numbers:\n");
-////	for(p=a;p<(a+5);p++){scanf("%d",p);}
-////	for(p=a;p<(a+5);p++){printf("%d ",*p);}
-//	//¸´ºÏ¸³Öµ±í´ïÊ½
-//	for(p=a;p<(a+5);){scanf("%d",p++);}
-//	for(p=a;p<(a+5);){printf("%d ",*p++);}
-//
-//	printf("\n");
-//	return 0;
-//}
+//æŒ‡é’ˆå˜é‡æŒ‡å‘æ•°ç»„
+#include <stdio.h>
+int main(){
+	int a[5];
+	int *p;
+	printf("please enter 5 integer numbers:\n");
+//	for(p=a;p<(a+5);p++){scanf("%d",p);}
+//	for(p=a;p<(a+5);p++){printf("%d ",*p);}
+	//å¤åˆèµ‹å€¼è¡¨è¾¾å¼
+	for(p=a;p<(a+5);){scanf("%d",p++);}
+	for(p=a;p<(a+5);){printf("%d ",*p++);}
+
+	printf("\n");
+	return 0;
+}

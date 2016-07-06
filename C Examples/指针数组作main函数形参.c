@@ -1,12 +1,12 @@
-//#include <stdio.h>
-//int main(int argc,char *argv[]){
-//	while(argc-->1) printf("%s\n",*++argv);
-//	return 0;
-//}
-//±àÒëÁ¬½Óºó£¬ÔÚ¹¤³Ì-ÉèÖÃ-µ÷ÊÔ-³ÌĞò±äÁ¿ÃüÁîÖĞÊäÈë"China Beijing"ÔÙÔËĞĞ³ÌĞò
+#include <stdio.h>
+int main(int argc,char *argv[]){
+	while(argc-->1) printf("%s\n",*++argv);
+	return 0;
+}
+//ç¼–è¯‘è¿æ¥åï¼Œåœ¨å·¥ç¨‹-è®¾ç½®-è°ƒè¯•-ç¨‹åºå˜é‡å‘½ä»¤ä¸­è¾“å…¥"China Beijing"å†è¿è¡Œç¨‹åº
 
-//#include <stdio.h>
-//int main(int argc,char *argv[]){
-//	while(--argc>0) printf("%s%c",*++argv,(argc>1)?' ':'\n');		//argc>1ÔÚÁ½×Ö·û´®Ö®¼äÊä³ö¿Õ¸ñ£¬µÈÓÚ1»»ĞĞ
-//	return 0;
-//}
+#include <stdio.h>
+int main(int argc,char *argv[]){
+	while(--argc>0) printf("%s%c",*++argv,(argc>1)?' ':'\n');		//argc>1åœ¨ä¸¤å­—ç¬¦ä¸²ä¹‹é—´è¾“å‡ºç©ºæ ¼ï¼Œç­‰äº1æ¢è¡Œ
+	return 0;
+}

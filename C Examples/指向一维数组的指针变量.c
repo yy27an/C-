@@ -1,19 +1,19 @@
-//#include <stdio.h>
-//int main(){
-//	int a[3][4]={1,3,5,7,9,11,13,15,17,19,21,23};
-//	int (*p)[4],i,j;
-//	p=a;		//pÖ¸Ïò¶şÎ¬Êı×éµÄ0ĞĞÊ×µØÖ·
-//	printf("please enter row and colum:\n");
-//	scanf("%d,%d",&i,&j);
-//	printf("a[%d][%d]=%d\n",i,j,*(*(p+i)+j));
-//	return 0;
-//}
+#include <stdio.h>
+int main(){
+	int a[3][4]={1,3,5,7,9,11,13,15,17,19,21,23};
+	int (*p)[4],i,j;
+	p=a;		//pæŒ‡å‘äºŒç»´æ•°ç»„çš„0è¡Œé¦–åœ°å€
+	printf("please enter row and colum:\n");
+	scanf("%d,%d",&i,&j);
+	printf("a[%d][%d]=%d\n",i,j,*(*(p+i)+j));
+	return 0;
+}
 
-//#include <stdio.h>
-//int main(){
-//	int a[4]={1,3,5,7};
-//	int (*p)[4];	
-//	p=&a;			//pÖ¸ÏòÒ»Î¬Êı×é£¬²»ÄÜĞ´³Ép=a£¬ÕâÑùµÄ»° (*p)[3]Ö¸ÏòµÄÊÇĞĞÖĞĞòºÅÎª3µÄµØÖ·
-//	printf("%d\n",(*p)[3]);
-//	return 0;
-//}
+#include <stdio.h>
+int main(){
+	int a[4]={1,3,5,7};
+	int (*p)[4];	
+	p=&a;			//pæŒ‡å‘ä¸€ç»´æ•°ç»„ï¼Œä¸èƒ½å†™æˆp=aï¼Œè¿™æ ·çš„è¯ (*p)[3]æŒ‡å‘çš„æ˜¯è¡Œä¸­åºå·ä¸º3çš„åœ°å€
+	printf("%d\n",(*p)[3]);
+	return 0;
+}

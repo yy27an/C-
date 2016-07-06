@@ -1,50 +1,50 @@
-//Ö±½ÓÔÚÖ÷º¯ÊıÖĞÔËÓÃÖ¸Õë
-//#include <stdio.h>
-//int main(){
-//	int *p1,*p2,*p,a,b;
-//	printf("please enter two integer numbers:\n");
-//	scanf("%d,%d",&a,&b);
-//	p1=&a; p2=&b;
-//	if(a<b) {p=p1; p1=p2; p2=p;}
-//	printf("a=%d,b=%d\n",a,b);
-//	printf("max=%d,min=%d\n",*p1,*p2);
-//	return 0;
-//}
+//ç›´æ¥åœ¨ä¸»å‡½æ•°ä¸­è¿ç”¨æŒ‡é’ˆ
+#include <stdio.h>
+int main(){
+	int *p1,*p2,*p,a,b;
+	printf("please enter two integer numbers:\n");
+	scanf("%d,%d",&a,&b);
+	p1=&a; p2=&b;
+	if(a<b) {p=p1; p1=p2; p2=p;}
+	printf("a=%d,b=%d\n",a,b);
+	printf("max=%d,min=%d\n",*p1,*p2);
+	return 0;
+}
 
-//Ö¸Õëº¯Êı×÷Îªº¯Êı²ÎÊı
-//Ê¹Ö¸ÕëËùÖ¸ÏòµÄ±äÁ¿Öµ±¾ÉíÓĞËù±ä»¯
-//#include <stdio.h>
-//int main(){
-//	void swap(int *p1, int *p2);
-//	int a,b;
-//	int *pointer_1,*pointer_2;
-//	printf("please enter a and b:\n");
-//	scanf("%d,%d",&a,&b);
-//	pointer_1=&a;
-//	pointer_2=&b;
-//	if(a<b) swap(pointer_1,pointer_2);
-//	printf("max=%d,min=%d\n",a,b);
-//	return 0;
-//}
-//void swap(int *p1, int *p2){		//ÊµÏÖµØÖ·ËùÖ¸ÏòµÄÕûĞÍÖµ´«µİ
-//	int temp;
-//	temp=*p1;
-//	*p1=*p2;
-//	*p2=temp;
-//}
+//æŒ‡é’ˆå‡½æ•°ä½œä¸ºå‡½æ•°å‚æ•°
+//ä½¿æŒ‡é’ˆæ‰€æŒ‡å‘çš„å˜é‡å€¼æœ¬èº«æœ‰æ‰€å˜åŒ–
+#include <stdio.h>
+int main(){
+	void swap(int *p1, int *p2);
+	int a,b;
+	int *pointer_1,*pointer_2;
+	printf("please enter a and b:\n");
+	scanf("%d,%d",&a,&b);
+	pointer_1=&a;
+	pointer_2=&b;
+	if(a<b) swap(pointer_1,pointer_2);
+	printf("max=%d,min=%d\n",a,b);
+	return 0;
+}
+void swap(int *p1, int *p2){		//å®ç°åœ°å€æ‰€æŒ‡å‘çš„æ•´å‹å€¼ä¼ é€’
+	int temp;
+	temp=*p1;
+	*p1=*p2;
+	*p2=temp;
+}
 
-////´íÎóµÄÊÇswapº¯ÊıÊ¹ÓÃ
-//void swap(int *p1, int *p2){
-//	int *temp;			//ĞèÏòtemp¸³ÓèÖ¸ÏòÕûĞÍµÄµØÖ·
-//	*temp=*p1;			//ÏòÎ´ÖªµÄ´æ´¢µ¥Ôª¸³ÖµºÁÎŞÒâÒå£¬ÆÆ»µÏµÍ³Õı³£¹¤×÷
-//	*p1=*p2;
-//	*p2=*temp;
-//}
-////²»¿ÉÄÜÍ¨¹ı¸Ä±äÖ´ĞĞµ÷ÓÃº¯ÊıÖĞÊµ²ÎÖ¸Õë±äÁ¿µÄÖµ
-////Ö»ÄÜ¸Ä±äÊµ²ÎÖ¸Õë±äÁ¿ËùÖ¸ÏòµÄ±äÁ¿Öµ
-//void swap(int *p1, int *p2){
-//	int *temp;
-//	temp=p1;
-//	p1=p2;
-//	p2=temp;
-//}
+//é”™è¯¯çš„æ˜¯swapå‡½æ•°ä½¿ç”¨
+void swap(int *p1, int *p2){
+	int *temp;			//éœ€å‘tempèµ‹äºˆæŒ‡å‘æ•´å‹çš„åœ°å€
+	*temp=*p1;			//å‘æœªçŸ¥çš„å­˜å‚¨å•å…ƒèµ‹å€¼æ¯«æ— æ„ä¹‰ï¼Œç ´åç³»ç»Ÿæ­£å¸¸å·¥ä½œ
+	*p1=*p2;
+	*p2=*temp;
+}
+//ä¸å¯èƒ½é€šè¿‡æ”¹å˜æ‰§è¡Œè°ƒç”¨å‡½æ•°ä¸­å®å‚æŒ‡é’ˆå˜é‡çš„å€¼
+//åªèƒ½æ”¹å˜å®å‚æŒ‡é’ˆå˜é‡æ‰€æŒ‡å‘çš„å˜é‡å€¼
+void swap(int *p1, int *p2){
+	int *temp;
+	temp=p1;
+	p1=p2;
+	p2=temp;
+}

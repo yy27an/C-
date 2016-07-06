@@ -1,6 +1,6 @@
-//#include <stdio.h>
-//int main(){
-//	char *string="I love China!";		//字符串第一个元素的地址
-//	printf("%s\n",string);
-//	return 0;
-//}
+#include <stdio.h>
+int main(){
+	char *string="I love China!";		//瀛楃涓茬涓�涓厓绱犵殑鍦板潃
+	printf("%s\n",string);
+	return 0;
+}

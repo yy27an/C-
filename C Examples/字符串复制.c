@@ -1,90 +1,90 @@
-//#include <stdio.h>
-//int main(){
-//	char a[]="I am a student.",b[20];
-//	int i;
-//	for(i=0;*(a+i)!='\0';i++) *(b+i)=*(a+i);
-//	*(b+i)='\0';
-//	printf("string a is %s\n",a);
-//	//printf("string b is %s\n",b);
-//	printf("string b is ");
-//	for(i=0;b[i]!='\0';i++) printf("%c",b[i]);
-//	printf("\n");
-//}
+#include <stdio.h>
+int main(){
+	char a[]="I am a student.",b[20];
+	int i;
+	for(i=0;*(a+i)!='\0';i++) *(b+i)=*(a+i);
+	*(b+i)='\0';
+	printf("string a is %s\n",a);
+	//printf("string b is %s\n",b);
+	printf("string b is ");
+	for(i=0;b[i]!='\0';i++) printf("%c",b[i]);
+	printf("\n");
+}
 
-//ÓÃÖ¸Õë±äÁ¿´¦Àí
-//#include <stdio.h>
-//int main(){
-//	char *p1,*p2,a[]="I am a boy.",b[20];
-//	//printf("%s\n",a);
-//	for(p1=a,p2=b;*p1!='\0';) *p2++=*p1++;
-//	*p2='\0';
-//	printf("string a is %s\n",a);
-//	printf("string b is %s\n",b);
-//	return 0;
-//}
+//ç”¨æŒ‡é’ˆå˜é‡å¤„ç†
+#include <stdio.h>
+int main(){
+	char *p1,*p2,a[]="I am a boy.",b[20];
+	//printf("%s\n",a);
+	for(p1=a,p2=b;*p1!='\0';) *p2++=*p1++;
+	*p2='\0';
+	printf("string a is %s\n",a);
+	printf("string b is %s\n",b);
+	return 0;
+}
 
-//ÓÃ×Ö·ûÊı×éÃû×÷Îªº¯Êı²ÎÊı
-//#include <stdio.h>
-//int main(){
-//	void copy_string(char from[], char to[]);
-//	char a[]="I am a teacher.";
-//	char b[]="You are a student.";
-//	printf("string a=%s\nstring b=%s\n\n",a,b);
-//	printf("copy string a to string b:\n");
-//	copy_string(a,b);
-//	printf("string a=%s\nstring b=%s\n",a,b);
-//	return 0;
-//}
-//void copy_string(char from[], char to[]){
-//	int i=0;
-//	while(from[i]!='\0'){
-//		to[i]=from[i];
-//		i++;
-//	}
-//	to[i]='\0';
-//}
+//ç”¨å­—ç¬¦æ•°ç»„åä½œä¸ºå‡½æ•°å‚æ•°
+#include <stdio.h>
+int main(){
+	void copy_string(char from[], char to[]);
+	char a[]="I am a teacher.";
+	char b[]="You are a student.";
+	printf("string a=%s\nstring b=%s\n\n",a,b);
+	printf("copy string a to string b:\n");
+	copy_string(a,b);
+	printf("string a=%s\nstring b=%s\n",a,b);
+	return 0;
+}
+void copy_string(char from[], char to[]){
+	int i=0;
+	while(from[i]!='\0'){
+		to[i]=from[i];
+		i++;
+	}
+	to[i]='\0';
+}
 
-//ÓÃ×Ö·ûĞÍÖ¸Õë±äÁ¿×÷Êµ²Î
-//#include <stdio.h>
-//int main(){
-//	void copy_string(char from[], char to[]);
-//	char a[]="I am a teacher.";
-//	char b[]="You are a student.";
-//	char *from=a,*to=b;
-//	printf("string a=%s\nstring b=%s\n\n",from,to);
-//	printf("copy string a to string b:\n");
-//	copy_string(from,to);
-//	printf("string a=%s\nstring b=%s\n",from,to);
-//	return 0;
-//}
-//void copy_string(char from[], char to[]){
-//	int i=0;
-//	while(from[i]!='\0'){
-//		to[i]=from[i];
-//		i++;
-//	}
-//	to[i]='\0';
-//}
+//ç”¨å­—ç¬¦å‹æŒ‡é’ˆå˜é‡ä½œå®å‚
+#include <stdio.h>
+int main(){
+	void copy_string(char from[], char to[]);
+	char a[]="I am a teacher.";
+	char b[]="You are a student.";
+	char *from=a,*to=b;
+	printf("string a=%s\nstring b=%s\n\n",from,to);
+	printf("copy string a to string b:\n");
+	copy_string(from,to);
+	printf("string a=%s\nstring b=%s\n",from,to);
+	return 0;
+}
+void copy_string(char from[], char to[]){
+	int i=0;
+	while(from[i]!='\0'){
+		to[i]=from[i];
+		i++;
+	}
+	to[i]='\0';
+}
 
-//ÓÃ×Ö·ûĞÍÖ¸Õë±äÁ¿×÷ĞÎ²ÎºÍÊµ²Î
-//#include <stdio.h>
-//int main(){
-//	void copy_string(char from[], char to[]);
-//	char a[]="I am a teacher.";
-//	char b[]="You are a student.";
-//	char *p=b;
-//	//char *p="You are a student.";
-//	printf("string a=%s\nstring b=%s\n\n",a,p);
-//	printf("copy string a to string b:\n");
-//	copy_string(a,p);
-//	printf("string a=%s\nstring b=%s\n",a,p);
-//	return 0;
-//}
-////void copy_string(char *from, char *to){
-////	for(;*from!='\0';) *to++=*from++;
-////	*to='\0';
-////}
-////¼òÁ·Ò»Ğ©
+//ç”¨å­—ç¬¦å‹æŒ‡é’ˆå˜é‡ä½œå½¢å‚å’Œå®å‚
+#include <stdio.h>
+int main(){
+	void copy_string(char from[], char to[]);
+	char a[]="I am a teacher.";
+	char b[]="You are a student.";
+	char *p=b;
+	//char *p="You are a student.";
+	printf("string a=%s\nstring b=%s\n\n",a,p);
+	printf("copy string a to string b:\n");
+	copy_string(a,p);
+	printf("string a=%s\nstring b=%s\n",a,p);
+	return 0;
+}
 //void copy_string(char *from, char *to){
-//	while((*to++=*from++));
+//	for(;*from!='\0';) *to++=*from++;
+//	*to='\0';
 //}
+//ç®€ç»ƒä¸€äº›
+void copy_string(char *from, char *to){
+	while((*to++=*from++));
+}
